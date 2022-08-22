@@ -1,0 +1,109 @@
+@import "../../styles/colors.scss";
+
+.cuerpo{
+    @-ms-viewport {
+        width: extend-to-zoom;
+        zoom: 1.0;  
+        height: 100%;      
+    }
+    height: 97vh;   
+    border: 2px solid red;  
+}
+
+.general{
+    display:flex;
+    justify-content: center;
+    align-items: center;   
+    border: 2px solid blue;  
+    height: 100%;
+    width: 100%;
+    
+}
+.contenedorPrincipal{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: rgb(156, 156, 156);
+height: 80%;
+width: 40%;
+border-radius: 10px;
+
+}
+
+.bloqueCentral{
+    border: 2px solid green;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;    
+    height:90%;
+    width: 100%;
+
+}
+
+.title{
+    color: rgb(243, 243, 243);
+    font-size: 2rem;
+}
+
+.bloqueGrabado{
+    
+    border: 2px solid green;  
+    height: 30%;
+}
+
+.box1{
+    background-color: rgb(255, 255, 255);
+    height: 90%;
+    width: 30vw;
+}
+
+.recordedText{
+    border: 2px solid yellow;
+    height: 100%;
+    width: 100%;  
+}
+
+.titleRecord{
+    color:rgb(248, 248, 248);
+}
+
+.bloqueTraducido{
+    
+    border: 2px solid green;  
+    height: 30%;
+}
+
+
+.box2{
+    background-color: rgb(255, 255, 255);
+    height: 90%;
+    width: 30vw;
+}
+
+.translatedText{
+    border: 2px solid yellow;
+    height: 100%;
+    width: 100%;  
+}
+
+.titleTranslated{
+    color:rgb(248, 248, 248);
+}
+
+.bloqueSeleccion{
+
+     
+    border: 2px solid blue;  
+    height: 5%; 
+    width: 30vw;
+
+}
+
+.botones{
+
+    display: flex;   
+    justify-content: space-around;
+    
+}
