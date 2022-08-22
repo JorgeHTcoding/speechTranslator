@@ -1,0 +1,55 @@
+@import "../../styles/colors.scss";
+
+.vista{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    background: $grad;
+    justify-content: space-between;
+    .logo{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 10em;
+        width: 20%;
+        padding:2em;
+        color:white;
+        font-size: 1em;
+        line-height: 1.5em;
+        font-weight: lighter;
+        .info{
+            height: 80vh;
+            width: 100%;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        img{
+            height: 50px;
+            width: auto;
+        }
+        .esp {
+            padding-top: 3em;
+            text-align: center;
+        }
+        .eng {
+            padding-top: 3em;
+            text-align: center;
+        }
+        a{
+            text-align: center;
+            text-decoration: none;
+            font-weight: 500;
+            color: white;
+        }
+    }
+}
+
+.trad {
+    margin:4em;
+    width: 80%;
+    height:80vh;
+    background-color: rgba(255, 255, 255, 0.481);
+}
