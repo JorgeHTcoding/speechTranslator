@@ -6,17 +6,16 @@
         zoom: 1.0;  
         height: 100%;      
     }
-    height: 97vh;   
-    border: 2px solid red;  
+    height: 100vh;   
+   
 }
 
 .general{
     display:flex;
     justify-content: center;
-    align-items: center;   
-    border: 2px solid blue;  
+    align-items: center;       
     height: 100%;
-    width: 100%;
+    width: 78%;
     
 }
 .contenedorPrincipal{
@@ -24,15 +23,15 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-background-color: rgb(156, 156, 156);
-height: 80%;
-width: 40%;
+background-color: rgba(255, 255, 255, 0.481);
+height: 82%;
+width: 60%;
 border-radius: 10px;
 
 }
 
 .bloqueCentral{
-    border: 2px solid green;  
+  
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -41,69 +40,161 @@ border-radius: 10px;
     width: 100%;
 
 }
-
+.bloqueGrabar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.record{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    background-image: url("../../../assets/img/microbtn.png");
+    background-repeat: no-repeat;
+    transition-duration: 1000ms;
+   
+    
+}
+.record:hover{
+    background-image: url("../../../assets/img/microbtnhover.png");
+    background-repeat: none;
+    background-clip: none;
+    transition-duration: 1000ms;
+}
 .title{
     color: rgb(243, 243, 243);
-    font-size: 2rem;
+    font-size: 1.5rem;
+    padding-top:10px;
 }
 
 .bloqueGrabado{
     
-    border: 2px solid green;  
+    padding-top: 10px;
     height: 30%;
 }
 
 .box1{
+    margin-top:10px;
+    margin-bottom: 10px;
+    border-radius:5px ;
     background-color: rgb(255, 255, 255);
     height: 90%;
     width: 30vw;
 }
 
 .recordedText{
-    border: 2px solid yellow;
+  
     height: 100%;
     width: 100%;  
 }
 
 .titleRecord{
     color:rgb(248, 248, 248);
+    font-size: 1.2rem;
 }
 
 .bloqueTraducido{
     
-    border: 2px solid green;  
+  
     height: 30%;
 }
 
 
 .box2{
+    margin-top:10px;
+    border-radius:5px ;
     background-color: rgb(255, 255, 255);
     height: 90%;
     width: 30vw;
 }
 
 .translatedText{
-    border: 2px solid yellow;
+   
     height: 100%;
     width: 100%;  
 }
 
 .titleTranslated{
+    font-size: 1.2rem;
     color:rgb(248, 248, 248);
 }
 
-.bloqueSeleccion{
-
-     
-    border: 2px solid blue;  
+.bloqueSeleccion{     
+    
     height: 5%; 
     width: 30vw;
+    padding-top: 20px;   
+    padding-bottom: 20px;
+    
 
 }
 
 .botones{
 
     display: flex;   
-    justify-content: space-around;
+    justify-content: space-between;
+    height: 100%;
+    padding-top: 10px;
+           
+}
+
+
+
+.traducir{
+    height: 5vh;
+    width: 7vw;
+    background: $green;   
+    border:none;
+    border-radius: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: bold;    
+    color: white ;
+    padding-left: 10px;
+    padding-right: 10px; 
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+.traducir:hover {
+    background: white;
+    color: $green;  
+    border:none ;
+    
+   
+}
+
+.dropDown{
+        display: none;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        height: 5vh;
+        width: 7vw;
+        background: white;   
+        border: #af9ea7;
+        outline: 0px;
+        text-decoration: none;
+        border-radius: 2px;
+        text-align: center;
+        text-decoration: none;
+        display: flex;
+        font-size: 1.1em;
+        font-weight: bold;    
+        color: $green ;       
+        padding-left: 10px;
+        padding-right: 10px; 
+        transition-duration: 0.4s;
+        cursor: pointer;       
+}
+
+.bloqueTraducido{
+    margin-top: 20px;
     
 }
